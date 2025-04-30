@@ -2,7 +2,7 @@
 import { resolve } from 'node:path';
 import { createWriteStream, constants } from 'node:fs';
 import { pipeline } from 'node:stream/promises';
-import { getDirName } from '../../utils/getDirName';
+import { getDirName } from '../../utils/getDirName.js';
 import { checkIfFileExist } from '../../utils/checkIfFileExist';
 
 const write = async () => {
