@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import { createWriteStream, constants } from 'node:fs';
 import { pipeline } from 'node:stream/promises';
 import { getDirName } from '../../utils/getDirName.js';
-import { checkIfFileExist } from '../../utils/checkIfFileExist';
+import { checkIfFileExist } from '../../utils/checkIfFileExist.js';
 
 const write = async () => {
     const __dirname = getDirName(import.meta.url);
